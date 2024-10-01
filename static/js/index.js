@@ -30,7 +30,7 @@ $(document).ready(function() {
     });
 
     var options = {
-			slidesToScroll: 1,
+			slidesToScroll: 3,
 			slidesToShow: 3,
 			loop: true,
 			infinite: true,
@@ -56,6 +56,21 @@ $(document).ready(function() {
     	element.bulmaCarousel.on('before-show', function(state) {
     		console.log(state);
     	});
+    }
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.visibility === "visible") {
+          content.style.visibility = "hidden";
+        } else {
+          content.style.visibility = "visible";
+        }
+      });
     }
 
     /*var player = document.getElementById('interpolation-video');
