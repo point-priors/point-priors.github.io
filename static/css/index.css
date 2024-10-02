@@ -13,6 +13,15 @@ body {
     margin-bottom: 5px;
 }
 
+.selector {
+  font-size:25px;
+  width: 42%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  margin-right: 2%;
+}
+
 .dnerf {
   font-variant: small-caps;
 }

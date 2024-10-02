@@ -154,10 +154,20 @@
     <h2 class="title is-3">Results</h2>
     </div>
     <hr>
-    <button type="button" class="title is-5 collapsible">Pick Mug</button>
-    <div class="content collapse-content">
+    <!-- <button type="button" class="title is-5 collapsible">Pick Mug</button>
+    <div class="content collapse-content"> -->
 
-    <div class="container">
+    <select id="taskSelect" float="left" class="selector">
+        <option value="task1" selected>Pick Mug</option>
+    </select>
+
+    <select id="generalizationSelect" class="selector">
+        <option value="generalization1" selected>Spatial Generalization</option>
+        <option value="generalization2">Novel Objects</option>
+        <option value="generalization3">Distractors</option>
+    </select>
+
+    <div class="carousel-container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-cup1-1">
           <video poster="" id="item-cup1-1" autoplay controls muted loop playsinline height="100%">
@@ -187,7 +197,7 @@
           </video>
         </div>
 
-        <div class="item item-cup2-2">
+        <!-- <div class="item item-cup2-2">
           <video poster="" id="item-cup2-2" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/pick/original/Original_5_Compressed.mp4"
                     type="video/mp4">
@@ -357,11 +367,11 @@
             <source src="./static/videos/pick/distracting/Distracting_6_Compressed.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
-  </div>
+  <!-- </div> -->
 </section>
 
 
