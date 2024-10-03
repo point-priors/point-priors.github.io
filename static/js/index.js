@@ -61,44 +61,74 @@ $(document).ready(function() {
     let index = 0;
 
     // Videos database (you can add more here)
+    // Generalization options based on task selection
+    const generalizationData = {
+      "task1": [
+          { value: "generalization1", text: "Spatial Generalization" },
+          { value: "generalization2", text: "Novel Objects" },
+          { value: "generalization3", text: "Distractors" }
+      ],
+      "task2": [
+        { value: "generalization1", text: "Spatial Generalization" },
+        { value: "generalization2", text: "Novel Objects" }
+      ]
+    };
+
+    // Function to update the second dropdown based on the first dropdown's value
+    function updateGeneralizationOptions(task) {
+        // Clear the current options in the generalization select
+        generalizationSelect.innerHTML = '';
+
+        if (task in generalizationData) {
+            // Populate the generalization dropdown with new options
+            generalizationData[task].forEach(option => {
+                const newOption = document.createElement('option');
+                newOption.value = option.value;
+                newOption.text = option.text;
+                generalizationSelect.appendChild(newOption);
+            });
+        }
+    };
+
+    // Listen for changes in the task dropdown and update the generalization dropdown
+    taskSelect.addEventListener('change', (event) => {
+      const selectedTask = event.target.value;
+      updateGeneralizationOptions(selectedTask);
+    });
+
     const videoData = {
     "task1": {
             "generalization1": [
                 {src: "./static/videos/pick/original/Original_1_Compressed.mp4", id: "item-cup1-1"},
-                // {src: "./static/videos/pick/original/Original_2_Compressed.mp4", id: "item-cup1-2"},
-                // {src: "./static/videos/pick/original/Original_3_Compressed.mp4", id: "item-cup1-3"},
                 {src: "./static/videos/pick/original/Original_4_Compressed.mp4", id: "item-cup1-4"},
-                // {src: "./static/videos/pick/original/Original_5_Compressed.mp4", id: "item-cup1-5"},
-                // {src: "./static/videos/pick/original/Original_6_Compressed.mp4", id: "item-cup1-6"},
                 {src: "./static/videos/pick/original/Original_7_Compressed.mp4", id: "item-cup1-7"},
-                // {src: "./static/videos/pick/original/Original_8_Compressed.mp4", id: "item-cup1-8"},
-                // {src: "./static/videos/pick/original/Original_9_Compressed.mp4", id: "item-cup1-9"},
                 {src: "./static/videos/pick/original/Original_10_Compressed.mp4", id: "item-cup1-10"},
-                // {src: "./static/videos/pick/original/Original_11_Compressed.mp4", id: "item-cup1-11"},
-                // {src: "./static/videos/pick/original/Original_12_Compressed.mp4", id: "item-cup1-12"},
 
             ],
             "generalization2": [
               {src: "./static/videos/pick/novel/New_1_Compressed.mp4", id: "item-cup1-1"},
-              // {src: "./static/videos/pick/novel/New_2_Compressed.mp4", id: "item-cup1-2"},
-              // {src: "./static/videos/pick/novel/New_3_Compressed.mp4", id: "item-cup1-3"},
               {src: "./static/videos/pick/novel/New_4_Compressed.mp4", id: "item-cup1-4"},
-              // {src: "./static/videos/pick/novel/New_5_Compressed.mp4", id: "item-cup1-5"},
-              // {src: "./static/videos/pick/novel/New_6_Compressed.mp4", id: "item-cup1-6"},
               {src: "./static/videos/pick/novel/New_7_Compressed.mp4", id: "item-cup1-7"},
-              // {src: "./static/videos/pick/novel/New_8_Compressed.mp4", id: "item-cup1-8"},
-              // {src: "./static/videos/pick/novel/New_9_Compressed.mp4", id: "item-cup1-9"},
             ],
 
             "generalization3": [
               {src: "./static/videos/pick/distracting/Distracting_1_Compressed.mp4", id: "item-cup1-1"},
-              // {src: "./static/videos/pick/distracting/Distracting_2_Compressed.mp4", id: "item-cup1-2"},
-              // {src: "./static/videos/pick/distracting/Distracting_4_Compressed.mp4", id: "item-cup1-3"},
               {src: "./static/videos/pick/distracting/Distracting_3_Compressed.mp4", id: "item-cup1-4"},
-              // {src: "./static/videos/pick/distracting/Distracting_5_Compressed.mp4", id: "item-cup1-5"},
-              // {src: "./static/videos/pick/distracting/Distracting_6_Compressed.mp4", id: "item-cup1-6"},
             ]
         },
+      'task2': {
+        "generalization1": [
+                {src: "./static/videos/put_mug_on_plate/original/Original_1_Compressed.mp4", id: "item-cup1-1"},
+                {src: "./static/videos/put_mug_on_plate/original/Original_2_Compressed.mp4", id: "item-cup1-4"},
+                {src: "./static/videos/put_mug_on_plate/original/Original_3_Compressed.mp4", id: "item-cup1-7"},
+                {src: "./static/videos/put_mug_on_plate/original/Original_4_Compressed.mp4", id: "item-cup1-10"},
+
+            ],
+            "generalization2": [
+              {src: "./static/videos/put_mug_on_plate/novel/New_1_Compressed.mp4", id: "item-cup1-1"},
+              {src: "./static/videos/put_mug_on_plate/novel/New_2_Compressed.mp4", id: "item-cup1-4"},
+            ],
+      }
     };
 
     function loadVideos(task, generalization) {
