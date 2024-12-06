@@ -229,6 +229,7 @@ $(document).ready(function() {
               video.currentTime = 0; // Restart the video
               video.play(); // Play the video
             } else {
+              video.currentTime = 0; // Restart the video
               video.pause(); // Pause the video
             }
           });
