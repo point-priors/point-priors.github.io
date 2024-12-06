@@ -222,7 +222,7 @@ $(document).ready(function() {
 
         carousel.addEventListener("scroll", () => {
           videos.forEach((video) => {
-            const rect = video.getBoundingClientRect();
+            const rect = video.closest(".carousel-item").getBoundingClientRect();
             const isVisible = rect.left >= 0 && rect.right <= window.innerWidth;
         
             if (isVisible) {
