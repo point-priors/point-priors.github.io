@@ -146,46 +146,46 @@ $(document).ready(function() {
       },
       'task3': {
           "generalization1": [
-                {src: "./static/videos/lift_plate/original/Original1_compressed.mov", id: "item-cup1-1"},
-                {src: "./static/videos/lift_plate/original/Original2_compressed.mov", id: "item-cup1-4"},
-                {src: "./static/videos/lift_plate/original/Original3_compressed.mov", id: "item-cup1-7"},
+                {src: "./static/videos/lift_plate/original/Original1_compressed.mp4", id: "item-cup1-1"},
+                {src: "./static/videos/lift_plate/original/Original2_compressed.mp4", id: "item-cup1-4"},
+                {src: "./static/videos/lift_plate/original/Original3_compressed.mp4", id: "item-cup1-7"},
 
             ],
             "generalization2": [
-              {src: "./static/videos/lift_plate/novel/Novel1_compressed.mov", id: "item-cup1-1"},
-              {src: "./static/videos/lift_plate/novel/Novel2_compressed.mov", id: "item-cup1-4"},
+              {src: "./static/videos/lift_plate/novel/Novel1_compressed.mp4", id: "item-cup1-1"},
+              {src: "./static/videos/lift_plate/novel/Novel2_compressed.mp4", id: "item-cup1-4"},
             ],
 
             "generalization3": [
-              {src: "./static/videos/lift_plate/distracting/Distractor1_compressed.mov", id: "item-cup1-1"},
-              {src: "./static/videos/lift_plate/distracting/Distractor2_compressed.mov", id: "item-cup1-4"},
+              {src: "./static/videos/lift_plate/distracting/Distractor1_compressed.mp4", id: "item-cup1-1"},
+              {src: "./static/videos/lift_plate/distracting/Distractor2_compressed.mp4", id: "item-cup1-4"},
             ]
       },
       'task4': {
           "generalization1": [
-                {src: "./static/videos/bottle/original/Original1_compressed.mov", id: "item-cup1-1"},
-                {src: "./static/videos/bottle/original/Original2_compressed.mov", id: "item-cup1-4"},
-                {src: "./static/videos/bottle/original/Original3_compressed.mov", id: "item-cup1-7"},
+                {src: "./static/videos/bottle/original/Original1_compressed.mp4", id: "item-cup1-1"},
+                {src: "./static/videos/bottle/original/Original2_compressed.mp4", id: "item-cup1-4"},
+                {src: "./static/videos/bottle/original/Original3_compressed.mp4", id: "item-cup1-7"},
 
             ],
             "generalization2": [
-              {src: "./static/videos/bottle/novel/Novel1_compressed.mov", id: "item-cup1-1"},
-              {src: "./static/videos/bottle/novel/Novel2_compressed.mov", id: "item-cup1-4"},
+              {src: "./static/videos/bottle/novel/Novel1_compressed.mp4", id: "item-cup1-1"},
+              {src: "./static/videos/bottle/novel/Novel2_compressed.mp4", id: "item-cup1-4"},
             ],
       },
       'task5': {
           "generalization1": [
-                {src: "./static/videos/microwave/original/Original1_compressed_4x.mov", id: "item-cup1-1"},
-                {src: "./static/videos/microwave/original/Original2_compressed_4x.mov", id: "item-cup1-4"},
-                {src: "./static/videos/microwave/original/Original3_compressed_4x.mov", id: "item-cup1-7"},
+                {src: "./static/videos/microwave/original/Original1_compressed_4x.mp4", id: "item-cup1-1"},
+                {src: "./static/videos/microwave/original/Original2_compressed_4x.mp4", id: "item-cup1-4"},
+                {src: "./static/videos/microwave/original/Original3_compressed_4x.mp4", id: "item-cup1-7"},
 
             ],
       },
       'task6': {
           "generalization1": [
-                {src: "./static/videos/sweep_broom/original/Original1_compressed_4x.mov", id: "item-cup1-1"},
-                {src: "./static/videos/sweep_broom/original/Original2_compressed_4x.mov", id: "item-cup1-4"},
-                {src: "./static/videos/sweep_broom/original/Original3_compressed_4x.mov", id: "item-cup1-7"},
+                {src: "./static/videos/sweep_broom/original/Original1_compressed_4x.mp4", id: "item-cup1-1"},
+                {src: "./static/videos/sweep_broom/original/Original2_compressed_4x.mp4", id: "item-cup1-4"},
+                {src: "./static/videos/sweep_broom/original/Original3_compressed_4x.mp4", id: "item-cup1-7"},
 
             ],
       }
