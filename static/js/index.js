@@ -76,6 +76,10 @@ $(document).ready(function() {
         { value: "generalization1", text: "Spatial Generalization" },
           { value: "generalization2", text: "Novel Objects" },
           { value: "generalization3", text: "Distractors" }
+      ],
+      "task4": [
+        { value: "generalization1", text: "Spatial Generalization" },
+        { value: "generalization2", text: "Novel Objects" }
       ]
     };
 
@@ -150,6 +154,18 @@ $(document).ready(function() {
               {src: "./static/videos/lift_plate/distracting/Distractor1_compressed.mov", id: "item-cup1-1"},
               {src: "./static/videos/lift_plate/distracting/Distractor2_compressed.mov", id: "item-cup1-4"},
             ]
+      },
+      'task3': {
+          "generalization1": [
+                {src: "./static/videos/bottle/original/Original1_compressed.mov", id: "item-cup1-1"},
+                {src: "./static/videos/bottle/original/Original2_compressed.mov", id: "item-cup1-4"},
+                {src: "./static/videos/bottle/original/Original3_compressed.mov", id: "item-cup1-7"},
+
+            ],
+            "generalization2": [
+              {src: "./static/videos/bottle/novel/Novel1_compressed.mov", id: "item-cup1-1"},
+              {src: "./static/videos/bottle/novel/Novel2_compressed.mov", id: "item-cup1-4"},
+            ],
       }
     };
 
