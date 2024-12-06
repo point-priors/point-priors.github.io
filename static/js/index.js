@@ -135,38 +135,38 @@ $(document).ready(function() {
             ],
       },
       'task3': {
-          // "generalization1": [
-          //       {src: "./static/videos/lift_plate/original/Original1_compressed.mp4", id: "item-cup1-1"},
-          //       {src: "./static/videos/lift_plate/original/Original2_compressed.mp4", id: "item-cup1-4"},
-          //       {src: "./static/videos/lift_plate/original/Original3_compressed.mp4", id: "item-cup1-7"},
-
-          //   ],
-          //   "generalization2": [
-          //     {src: "./static/videos/lift_plate/novel/Novel1_Compressed.mp4", id: "item-cup1-1"},
-          //     {src: "./static/videos/lift_plate/novel/Novel2_Compressed.mp4", id: "item-cup1-4"},
-          //   ],
-
-          //   "generalization3": [
-          //     {src: "./static/videos/lift_plate/distracting/Distractor1_compressed.mp4", id: "item-cup1-1"},
-          //     {src: "./static/videos/lift_plate/distracting/Distractor2_compressed.mp4", id: "item-cup1-4"},
-          //   ]
           "generalization1": [
-            {src: "./static/videos/pick/original/Original_1_Compressed.mp4", id: "item-cup1-1"},
-            {src: "./static/videos/pick/original/Original_4_Compressed.mp4", id: "item-cup1-4"},
-            {src: "./static/videos/pick/original/Original_7_Compressed.mp4", id: "item-cup1-7"},
-            {src: "./static/videos/pick/original/Original_10_Compressed.mp4", id: "item-cup1-10"},
+                {src: "./static/videos/lift_plate/original/Original1_compressed.mov", id: "item-cup1-1"},
+                {src: "./static/videos/lift_plate/original/Original2_compressed.mov", id: "item-cup1-4"},
+                {src: "./static/videos/lift_plate/original/Original3_compressed.mov", id: "item-cup1-7"},
 
-        ],
-        "generalization2": [
-          {src: "./static/videos/pick/novel/New_1_Compressed.mp4", id: "item-cup1-1"},
-          {src: "./static/videos/pick/novel/New_4_Compressed.mp4", id: "item-cup1-4"},
-          {src: "./static/videos/pick/novel/New_7_Compressed.mp4", id: "item-cup1-7"},
-        ],
+            ],
+            "generalization2": [
+              {src: "./static/videos/lift_plate/novel/Novel1_Compressed.mov", id: "item-cup1-1"},
+              {src: "./static/videos/lift_plate/novel/Novel2_Compressed.mov", id: "item-cup1-4"},
+            ],
 
-        "generalization3": [
-          {src: "./static/videos/pick/distracting/Distracting_1_Compressed.mp4", id: "item-cup1-1"},
-          {src: "./static/videos/pick/distracting/Distracting_3_Compressed.mp4", id: "item-cup1-4"},
-        ]
+            "generalization3": [
+              {src: "./static/videos/lift_plate/distracting/Distractor1_compressed.mov", id: "item-cup1-1"},
+              {src: "./static/videos/lift_plate/distracting/Distractor2_compressed.mov", id: "item-cup1-4"},
+            ]
+        //   "generalization1": [
+        //     {src: "./static/videos/pick/original/Original_1_Compressed.mp4", id: "item-cup1-1"},
+        //     {src: "./static/videos/pick/original/Original_4_Compressed.mp4", id: "item-cup1-4"},
+        //     {src: "./static/videos/pick/original/Original_7_Compressed.mp4", id: "item-cup1-7"},
+        //     {src: "./static/videos/pick/original/Original_10_Compressed.mp4", id: "item-cup1-10"},
+
+        // ],
+        // "generalization2": [
+        //   {src: "./static/videos/pick/novel/New_1_Compressed.mp4", id: "item-cup1-1"},
+        //   {src: "./static/videos/pick/novel/New_4_Compressed.mp4", id: "item-cup1-4"},
+        //   {src: "./static/videos/pick/novel/New_7_Compressed.mp4", id: "item-cup1-7"},
+        // ],
+
+        // "generalization3": [
+        //   {src: "./static/videos/pick/distracting/Distracting_1_Compressed.mp4", id: "item-cup1-1"},
+        //   {src: "./static/videos/pick/distracting/Distracting_3_Compressed.mp4", id: "item-cup1-4"},
+        // ]
       }
     };
 
