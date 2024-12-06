@@ -178,7 +178,7 @@ $(document).ready(function() {
                 {src: "./static/videos/microwave/original/Original1_compressed_4x.mp4", id: "item-cup1-1"},
                 {src: "./static/videos/microwave/original/Original2_compressed_4x.mp4", id: "item-cup1-4"},
                 {src: "./static/videos/microwave/original/Original3_compressed_4x.mp4", id: "item-cup1-7"},
-
+                {src: "./static/videos/microwave/original/Original4_compressed_4x.mp4", id: "item-cup1-10"},
             ],
       },
       'task6': {
@@ -186,6 +186,7 @@ $(document).ready(function() {
                 {src: "./static/videos/sweep_broom/original/Original1_compressed_4x.mp4", id: "item-cup1-1"},
                 {src: "./static/videos/sweep_broom/original/Original2_compressed_4x.mp4", id: "item-cup1-4"},
                 {src: "./static/videos/sweep_broom/original/Original3_compressed_4x.mp4", id: "item-cup1-7"},
+                {src: "./static/videos/sweep_broom/original/Original4_compressed_4x.mp4", id: "item-cup1-10"},
 
             ],
       }
