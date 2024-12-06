@@ -71,6 +71,11 @@ $(document).ready(function() {
       "task2": [
         { value: "generalization1", text: "Spatial Generalization" },
         { value: "generalization2", text: "Novel Objects" }
+      ],
+      "task3": [
+        { value: "generalization1", text: "Spatial Generalization" },
+          { value: "generalization2", text: "Novel Objects" },
+          { value: "generalization3", text: "Distractors" }
       ]
     };
 
@@ -128,6 +133,23 @@ $(document).ready(function() {
               {src: "./static/videos/put_mug_on_plate/novel/New_1_Compressed.mp4", id: "item-cup1-1"},
               {src: "./static/videos/put_mug_on_plate/novel/New_2_Compressed.mp4", id: "item-cup1-4"},
             ],
+      },
+      'task3': {
+          "generalization1": [
+                {src: "./static/videos/lift_plate/original/Original1_compressed.mp4", id: "item-cup1-1"},
+                {src: "./static/videos/lift_plate/original/Original2_compressed.mp4", id: "item-cup1-4"},
+                {src: "./static/videos/lift_plate/original/Original3_compressed.mp4", id: "item-cup1-7"},
+
+            ],
+            "generalization2": [
+              {src: "./static/videos/lift_plate/novel/Novel1_Compressed.mp4", id: "item-cup1-1"},
+              {src: "./static/videos/lift_plate/novel/Novel2_Compressed.mp4", id: "item-cup1-4"},
+            ],
+
+            "generalization3": [
+              {src: "./static/videos/lift_plate/distracting/Distractor1_compressed.mp4", id: "item-cup1-1"},
+              {src: "./static/videos/lift_plate/distracting/Distractor2_compressed.mp4", id: "item-cup1-4"},
+            ]
       }
     };
 
