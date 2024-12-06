@@ -174,10 +174,12 @@ $(document).ready(function() {
       },
       'task5': {
           "generalization1": [
-                {src: "./static/videos/microwave/original/Original1_compressed_4x.mp4", id: "item-cup1-1"},
-                {src: "./static/videos/microwave/original/Original2_compressed_4x.mp4", id: "item-cup1-4"},
-                {src: "./static/videos/microwave/original/Original3_compressed_4x.mp4", id: "item-cup1-7"},
-                {src: "./static/videos/microwave/original/Original4_compressed_4x.mp4", id: "item-cup1-10"},
+                {src: "./static/videos/microwave/original/Orig1_compressed_4x.mp4", id: "item-cup1-1"},
+                {src: "./static/videos/microwave/original/Orig2_compressed_4x.mp4", id: "item-cup1-4"},
+                {src: "./static/videos/microwave/original/Orig3_compressed_4x.mp4", id: "item-cup1-7"},
+                {src: "./static/videos/microwave/original/Orig4_compressed_4x.mp4", id: "item-cup1-10"},
+                {src: "./static/videos/microwave/original/Orig5_compressed_4x.mp4", id: "item-cup1-13"},
+                {src: "./static/videos/microwave/original/Orig6_compressed_4x.mp4", id: "item-cup1-16"},
             ],
       },
       'task6': {
