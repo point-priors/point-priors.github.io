@@ -165,7 +165,6 @@ $(document).ready(function() {
           "generalization1": [
                 {src: "./static/videos/bottle/original/Original1_compressed.mp4", id: "item-cup1-1"},
                 {src: "./static/videos/bottle/original/Original2_compressed.mp4", id: "item-cup1-4"},
-                {src: "./static/videos/bottle/original/Original3_compressed.mp4", id: "item-cup1-7"},
 
             ],
             "generalization2": [
