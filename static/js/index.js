@@ -80,6 +80,12 @@ $(document).ready(function() {
       "task4": [
         { value: "generalization1", text: "Spatial Generalization" },
         { value: "generalization2", text: "Novel Objects" }
+      ],
+      "task5": [
+        { value: "generalization1", text: "Spatial Generalization" }
+      ],
+      "task6": [
+        { value: "generalization1", text: "Spatial Generalization" }
       ]
     };
 
@@ -165,6 +171,22 @@ $(document).ready(function() {
             "generalization2": [
               {src: "./static/videos/bottle/novel/Novel1_compressed.mov", id: "item-cup1-1"},
               {src: "./static/videos/bottle/novel/Novel2_compressed.mov", id: "item-cup1-4"},
+            ],
+      },
+      'task5': {
+          "generalization1": [
+                {src: "./static/videos/microwave/original/Original1_compressed_4x.mov", id: "item-cup1-1"},
+                {src: "./static/videos/microwave/original/Original2_compressed_4x.mov", id: "item-cup1-4"},
+                {src: "./static/videos/microwave/original/Original3_compressed_4x.mov", id: "item-cup1-7"},
+
+            ],
+      },
+      'task6': {
+          "generalization1": [
+                {src: "./static/videos/sweep_broom/original/Original1_compressed_4x.mov", id: "item-cup1-1"},
+                {src: "./static/videos/sweep_broom/original/Original2_compressed_4x.mov", id: "item-cup1-4"},
+                {src: "./static/videos/sweep_broom/original/Original3_compressed_4x.mov", id: "item-cup1-7"},
+
             ],
       }
     };
