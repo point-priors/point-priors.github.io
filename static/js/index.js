@@ -155,7 +155,7 @@ $(document).ready(function() {
               {src: "./static/videos/lift_plate/distracting/Distractor2_compressed.mov", id: "item-cup1-4"},
             ]
       },
-      'task3': {
+      'task4': {
           "generalization1": [
                 {src: "./static/videos/bottle/original/Original1_compressed.mov", id: "item-cup1-1"},
                 {src: "./static/videos/bottle/original/Original2_compressed.mov", id: "item-cup1-4"},
