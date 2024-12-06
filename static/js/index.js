@@ -220,6 +220,20 @@ $(document).ready(function() {
         });
         carouselContainer.appendChild(carousel);
 
+        carousel.addEventListener("scroll", () => {
+          videos.forEach((video) => {
+            const rect = video.getBoundingClientRect();
+            const isVisible = rect.left >= 0 && rect.right <= window.innerWidth;
+        
+            if (isVisible) {
+              video.currentTime = 0; // Restart the video
+              video.play(); // Play the video
+            } else {
+              video.pause(); // Pause the video
+            }
+          });
+        });
+
         // carouselContainer.style.display = 'block'; // Show the carousel
         updateCarousel(); // Ensure proper alignment
     }
